@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.accrrsd.quarkpatches.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "quark_ancient_tomes_patch.refmap.json",
+  "mixins": [
+    "AncientTomesModuleMixin",
+    "AncientTomeItemMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

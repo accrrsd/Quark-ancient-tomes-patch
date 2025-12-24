@@ -1,1 +1,0 @@
-# Quark-ancient-tomes-patch
