@@ -1,46 +1,24 @@
+### Remove the frustrating +1 level limit from Quark's Ancient Tomes!
+#### 🔧 The Problem
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+Quark's Ancient Tomes are a fantastic way to push your enchantments beyond their natural limits, but they come with an arbitrary restriction: you can only upgrade an enchantment by one single level above its maximum.
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+Got Sharpness V and want to reach Sharpness VII? Too bad — the tome will stop working after Sharpness VI, even if you have multiple tomes. This limitation makes collecting Ancient Tomes feel unrewarding in the long run.
 
-Setup Process:
-==============================
+#### ✅ The Solution
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+This mod removes that restriction completely. Now, each Ancient Tome you apply increases the enchantment by one level, allowing for true progression.<br>
+Want Sharpness X? Collect enough tomes and you can get there! This creates a satisfying long-term goal and makes every Ancient Tome you find feel valuable.
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+#### ⚙️ Fully Configurable
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
+Every server and player is different. That's why this patch includes a simple configuration file:
+- Set your own limit: Want just +3 above max? Or +10? You decide.
+- Disable entirely: Set the value to 0 to restore original Quark behavior.
+- Easy configuration: Just edit config/quark-ancient-tomes-patch.toml
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
-
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
-
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+Default: Up to +3 levels above maximum (e.g., Sharpness V → VIII).
+#### 🎯 Perfect For
+- Modpack makers looking for balanced enchanting alternatives to Apotheosis enchanting module
+- Players who want their hard-earned Ancient Tomes to remain useful
+- Servers that want customizable progression systems
