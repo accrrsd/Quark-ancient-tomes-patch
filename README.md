@@ -1,4 +1,4 @@
-# Remove the frustrating +1 level limit from Quark's Ancient Tomes!
+### Remove the frustrating +1 level limit from Quark's Ancient Tomes!
 #### 🔧 The Problem
 
 Quark's Ancient Tomes are a fantastic way to push your enchantments beyond their natural limits, but they come with an arbitrary restriction: you can only upgrade an enchantment by one single level above its maximum.
